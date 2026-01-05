@@ -34,7 +34,7 @@ export default function HomePage() {
   }, [])
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '+923001234567'
+    const phoneNumber = '+923455644205'
     const message = 'Hello! I am interested in booking a luxury travel experience with Northern Scapes.'
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank')
   }
@@ -194,7 +194,7 @@ export default function HomePage() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.1 }}
             className="max-w-4xl mx-auto text-center mb-20"
           >
             <div className="inline-flex items-center justify-center mb-8">
@@ -221,7 +221,7 @@ export default function HomePage() {
                 key={destination.id}
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
+                transition={{ delay: index * 0.1, duration: 0.1 }}
                 whileHover={{ y: -10 }}
                 className="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:border-accent-500 dark:hover:border-accent-500"
               >
@@ -232,8 +232,8 @@ export default function HomePage() {
                     style={{
                       backgroundImage: `url(${destinationImages[destination.id as keyof typeof destinationImages]})`
                     }}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.5 }}
+                    whileHover={{ scale: 0.1 }}
+                    transition={{ duration: 0.1 }}
                   ></motion.div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                   <div className="absolute bottom-5 left-5">
@@ -503,7 +503,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <div className="text-white font-semibold">Phone Number</div>
-                    <div className="text-gray-300">+92 300 1234567</div>
+                    <div className="text-gray-300">+92 345 5644205</div>
                   </div>
                 </div>
 
@@ -513,7 +513,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <div className="text-white font-semibold">Email</div>
-                    <div className="text-gray-300">contact@northernscapes.com</div>
+                    <div className="text-gray-300">northernscapes512@gmail.com</div>
                   </div>
                 </div>
 
@@ -523,7 +523,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <div className="text-white font-semibold">Address</div>
-                    <div className="text-gray-300">Luxury Plaza, Islamabad, Pakistan</div>
+                    <div className="text-gray-300">Manthal, Skardu, Pakistan</div>
                   </div>
                 </div>
 
